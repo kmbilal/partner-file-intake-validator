@@ -1,0 +1,6 @@
+transaction_id,merchant_id,amount,currency,transaction_timestamp,account_number,email
+TX1001,M102,250.25,USD,2025-01-05T10:15:00Z,1234567890,valid@email.com
+TX1002,M102,120.00,USD,2025-01-05T10:16:00Z,1234567890,invalidemail
+TX1003,,75.00,USD,2025-01-05T10:17:00Z,1234567890,user@email.com
+TX1001,M102,-25.00,USD,2025-01-05T10:18:00Z,1234567890,user@email.com
+TX1005,M999,500.00,USD,INVALIDDATE,1234567890,test@email.com

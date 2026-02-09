@@ -1,0 +1,21 @@
+{
+  "file_type": "partner_settlement",
+  "required_columns": [
+    "transaction_id",
+    "merchant_id",
+    "amount",
+    "currency",
+    "transaction_timestamp",
+    "account_number",
+    "email"
+  ],
+  "field_rules": {
+    "transaction_id": { "required": true, "unique": true },
+    "merchant_id": { "required": true },
+    "amount": { "required": true, "type": "decimal", "min": 0.01 },
+    "currency": { "required": true, "allowed_values": ["USD"] },
+    "transaction_timestamp": { "required": true, "type": "iso8601" },
+    "account_number": { "required": true, "type": "numeric", "length": 10 },
+    "email": { "required": false, "type": "email" }
+  }
+}

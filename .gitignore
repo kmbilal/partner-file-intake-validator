@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.aws-sam/
+samconfig.toml
+*.log
+.vscode/
+.idea/
+.DS_Store
+# runtime outputs
+sample_data/output/*
+!sample_data/output/.gitkeep
+
+# python packaging artifacts
+*.egg-info/
+dist/
+build/
+
+# mac
+.DS_Store
