@@ -1,0 +1,14 @@
+Resources:
+  IntakeValidatorFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: python3.12
+      Handler: src/app/handler.handler
+      CodeUri: ./
+      Timeout: 30
+      MemorySize: 512
+      Architectures:
+        - arm64
+      Environment:
+        Variables:
+          PYTHONPATH: src

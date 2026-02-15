@@ -1,0 +1,5 @@
+{
+  "rules_path": "rules/settlement_v1.json",
+  "input_file": "sample_data/incoming/settlement_sample.csv",
+  "output_dir": "/tmp/output"
+}
